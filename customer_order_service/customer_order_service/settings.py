@@ -28,8 +28,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['customer-order-service.onrender.com']
 
+ALLOWED_HOSTS = ['customer-order-service.onrender.com', '*.onrender.com']
 SITE_ID = 1
 
 # settings.py
