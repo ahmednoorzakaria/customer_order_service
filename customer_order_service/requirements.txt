@@ -4,3 +4,6 @@ django-allauth>=0.48.0
 psycopg2>=2.9.2
 python-decouple>=3.6
 python-dotenv>=0.19.2
+requests>=2.26.0
+asgiref<4,>=3.7.0
+sqlparse>=0.3.1
