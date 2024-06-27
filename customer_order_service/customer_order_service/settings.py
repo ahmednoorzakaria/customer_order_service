@@ -29,12 +29,15 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','customer-order-service.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'customer-order-service.onrender.com', '0.0.0.0']
 SITE_ID = 1
 
 # settings.py
 
-LOGIN_REDIRECT_URL = '/customers'
+LOGIN_REDIRECT_URL = '/customers/'
+
+LOGIN_URL = '/accounts/login/'
+
 # Application definition
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
