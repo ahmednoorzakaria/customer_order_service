@@ -6,8 +6,7 @@ from django.db import models
 class Customer(models.Model):
     name = models.CharField(max_length=255)
     code = models.CharField(max_length=100, unique=True)
-    phone_number = models.CharField(max_length=15)
-
+    phone_number = models.BigIntegerField()
 
 class Order (models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
