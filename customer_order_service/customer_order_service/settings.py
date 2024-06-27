@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['customer-order-service.onrender.com', '*.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 SITE_ID = 1
 
 # settings.py
